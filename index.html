@@ -2326,9 +2326,10 @@
                     <h2>Subscribe to our newsletter</h2>
                     <p>Get informed about latest promotions and Golem updates.</p>
                     <div id="newsletter_form">
-                        <form action="php/send.php" method="post" class="subscribe-form" id="subscribe-form">
-                            <input type="email" name="email" class="subscribe-input" placeholder="Enter your e-mail address..."  required>
-                                <button type="submit" class="subscribe-submit">Notify Me</button>
+                        <form action="https://tooploox.us9.list-manage.com/subscribe/post?u=54a37efc1a15cb5998f123ee0&amp;id=cb29e6fe89" method="post" class="subscribe-form" id="subscribe-form">
+                            <input type="email" name="EMAIL" class="subscribe-input" placeholder="Enter your e-mail address..."  required>
+                            <div style="position: absolute; left: -5000px;"><input type="text" name="b_54a37efc1a15cb5998f123ee0_cb29e6fe89" tabindex="-1" value=""></div>
+                            <button type="submit" class="subscribe-submit">Notify Me</button>
                         </form>
                     </div>
                     <div id="preview"></div>
@@ -2353,23 +2354,11 @@
     <script src="js/jquery-2.0.3.min.js"></script>
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/jquery.scrollTo.js"></script>
-    <script src="js/jquery.form.js"></script>
     <script src="js/main.js"></script>
     <script src="js/retina.js"></script>
     <script src="js/waypoints.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/nivo-lightbox.min.js"></script>
-    <script type="text/javascript">
-        $('document').ready(function(){
-                $('#subscribe-form').ajaxForm( {
-                target: '#preview',
-                success: function() {
-                      $('#subscribe-form').slideUp('slow');
-                      $('#preview').css({"opacity":"1"});
-                    }
-                });
-            });
-    </script>
     <script>
         var url ='images/icons.svg';
         var c=new XMLHttpRequest(); c.open('GET', url, false); c.setRequestHeader('Content-Type', 'text/xml'); c.send();
