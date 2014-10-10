@@ -2326,7 +2326,7 @@
                     <h2>Subscribe to our newsletter</h2>
                     <p>Get informed about latest promotions and Golem updates.</p>
                     <div id="newsletter_form">
-                        <form action="https://tooploox.us9.list-manage.com/subscribe/post-json?u=54a37efc1a15cb5998f123ee0&amp;id=cb29e6fe89" method="get" class="subscribe-form" id="subscribe-form">
+                        <form action="https://tooploox.us9.list-manage.com/subscribe/post-json?u=54a37efc1a15cb5998f123ee0&amp;id=cb29e6fe89&amp;c=?" method="get" class="subscribe-form" id="subscribe-form">
                             <input type="email" name="EMAIL" class="subscribe-input" placeholder="Enter your e-mail address..."  required>
                             <div style="position: absolute; left: -5000px;"><input type="text" name="b_54a37efc1a15cb5998f123ee0_cb29e6fe89" tabindex="-1" value=""></div>
                             <button type="button" class="subscribe-submit" id="subscribe-form-btn">Notify Me</button>
@@ -2377,9 +2377,17 @@
                         console.log(err);
                     },
                     success: function(data) {
-                        $form.slideUp('slow');
+                        var $btn = $('#subscribe-form-btn');
 
-                        console.log(data);
+                        if (data.result == 'success``') {
+                            $btn.html('&#10004;');
+                        } else {
+                            $btn.html('&#65794;')
+                        }
+
+                        setTimeout(function() {
+                            $btn.html('Notify Me');
+                        }, 2000);
                     }
                 });
             });
