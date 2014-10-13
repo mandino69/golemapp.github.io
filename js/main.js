@@ -1,7 +1,7 @@
 (function($) {
-  
+
     var App = {
- 
+
     /**
     * Init Function
     */
@@ -13,9 +13,10 @@
         App.Animations();
         App.Carousel();
         App.Lightbox();
+        App.Newsletter();
     },
 
- 
+
     HomeOpacity: function() {
         var h = window.innerHeight;
         $(window).on('scroll', function() {
@@ -34,15 +35,13 @@
     $('#about_arrow_next').click(function () { $.scrollTo('#features_1',1000,{easing:'easeInOutExpo',offset:0,'axis':'y'});});
     $('#features_1_arrow_back').click(function () { $.scrollTo('#about',1000,{easing:'easeInOutExpo',offset:0,'axis':'y'});});
     $('#features_1_arrow_next').click(function () { $.scrollTo('#features_2',1000,{easing:'easeInOutExpo',offset:0,'axis':'y'});});
-    $('#features_2_arrow_back').click(function () { $.scrollTo('#features_1',1000,{easing:'easeInOutExpo',offset:0,'axis':'y'});});
-    $('#features_2_arrow_next').click(function () { $.scrollTo('#features_3',1000,{easing:'easeInOutExpo',offset:0,'axis':'y'});});
     $('#features_3_arrow_back').click(function () { $.scrollTo('#features_2',1000,{easing:'easeInOutExpo',offset:0,'axis':'y'});});
     $('#features_3_arrow_next').click(function () { $.scrollTo('#gallery',1000,{easing:'easeInOutExpo',offset:0,'axis':'y'});});
     $('#gallery_arrow_back').click(function () { $.scrollTo('0px',1000,{easing:'easeInOutExpo',offset:0,'axis':'y'});});
     },
- 
- 
- 
+
+
+
     /**
     * Scroll Back
     */
@@ -51,8 +50,8 @@
             $.scrollTo('#home',1500,{easing:'easeInOutExpo',offset:0,'axis':'y'});
         });
     },
- 
- 
+
+
     /**
     * Preloader
     */
@@ -79,25 +78,19 @@
             setTimeout(function(){$('#service_2').addClass('animated fadeInDown')},500);
             setTimeout(function(){$('#service_3').addClass('animated fadeInDown')},700);
         }, { offset: '50%' });
- 
+
         $('#features_1').waypoint(function() {
             setTimeout(function(){$('#features_1_content').addClass('animated fadeInDown')},0);
             setTimeout(function(){$('#features1a_image').addClass('animated fadeInRight')},1100);
             setTimeout(function(){$('#features1b_image').addClass('animated fadeInRight')},600);
         }, { offset: '50%' });
- 
+
         $('#features_2').waypoint(function() {
             setTimeout(function(){$('#features_2_content').addClass('animated fadeInDown')},0);
             setTimeout(function(){$('#features2a_image').addClass('animated fadeInLeft')},1100);
             setTimeout(function(){$('#features2b_image').addClass('animated fadeInLeft')},600)
         }, { offset: '50%' });
- 
-        $('#features_3').waypoint(function() {
-            setTimeout(function(){$('#features_3_intro').addClass('animated fadeInDown')},0);
-            setTimeout(function(){$('#features_3_content_left, #features_3_content_right').addClass('animated fadeInUp')},700);
-            setTimeout(function(){$('#features_3_content_center').addClass('animated fadeInDown')},600)
-        }, { offset: '50%' });
- 
+
         $('#gallery').waypoint(function() {
             setTimeout(function(){$('#gallery_intro').addClass('animated fadeInDown')},0);
             setTimeout(function(){$('#gallery_carousel').addClass('animated fadeInUp')},700)
@@ -128,13 +121,43 @@
             effect: 'fall',                             // The effect to use when showing the lightbox
         });
     },
- 
 
+    Newsletter: function() {
+        $('#subscribe-form-btn').click(function(event) {
+            event.preventDefault();
+
+            var $form = $('#subscribe-form');
+
+            $.ajax({
+                type: $form.attr('method'),
+                url: $form.attr('action'),
+                data: $form.serialize(),
+                cache: false,
+                dataType: 'jsonp',
+                contentType: "application/json; charset=utf-8",
+                error: function(err) {
+                    console.log(err);
+                },
+                success: function(data) {
+                    var $btn = $('#subscribe-form-btn');
+
+                    if (data.result == 'success') {
+                        $btn.html('&#10004;');
+                    } else {
+                        $btn.html('&#65794;')
+                    }
+
+                    setTimeout(function() {
+                        $btn.html('Notify Me');
+                    }, 2000);
+                }
+            });
+        });
+    },
  }
 
 $(function() {
   App.init();
-  });
-
+});
 
 })(jQuery);

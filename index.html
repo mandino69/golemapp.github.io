@@ -5,7 +5,6 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <!-- CSS Files comes here -->
     <link href="css/bootstrap.css" rel="stylesheet" media="screen">
     <link href="css/style.css" rel="stylesheet" media="screen">
     <link href="css/animate.css" rel="stylesheet" media="screen">
@@ -16,13 +15,10 @@
     <link href="css/colors/green.css" rel="stylesheet" media="screen">
     <link href="css/responsive.css" rel="stylesheet" media="screen">
 
-    <!-- Google fonts -->
     <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic" rel="stylesheet" type="text/css">
 
-    <!-- Modernizer and IE specyfic files -->  
     <script src="js/modernizr.custom.js"></script>
 
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="js/html5shiv.js"></script>
       <script src="js/respond.min.js"></script>
@@ -2106,10 +2102,6 @@
      <![endif]-->
   </head>
   <body>
-    <!--###############################-->
-    <!--PRELOADER #####################-->
-    <!--###############################-->
-
     <div id="preloader">
         <div id="status">
             <div class="spinner">
@@ -2119,11 +2111,6 @@
             </div>
         </div>
     </div>
-
-    <!--###############################-->
-    <!--HOME ##########################-->
-    <!--###############################-->
-
     <section id="home">
         <div class="container">
             <div class="row">
@@ -2140,12 +2127,6 @@
             </div>
         </div>
     </section>
-
-
-    <!--###############################-->
-    <!--ABOUT #########################-->
-    <!--###############################-->
-
     <section id="about">
         <div class="container">
             <div class="row" id="about_intro">
@@ -2170,22 +2151,14 @@
             </div>
         </div>
     </section>
-    <!-->
-
     <section class="arrows_box">
-    <div class="arrows">
-        <svg viewBox="0 0 32 32" class="arrow_down" id="about_arrow_next">
-            <use xlink:href="#right-arrow"></use></svg>
-        <svg viewBox="0 0 32 32" class="arrow_up" id="about_arrow_back">
-            <use xlink:href="#left-arrow"></use></svg>
-    </div>
+        <div class="arrows">
+            <svg viewBox="0 0 32 32" class="arrow_down" id="about_arrow_next">
+                <use xlink:href="#right-arrow"></use></svg>
+            <svg viewBox="0 0 32 32" class="arrow_up" id="about_arrow_back">
+                <use xlink:href="#left-arrow"></use></svg>
+        </div>
     </section>
-    <!--######-->
-
-    <!--###############################-->
-    <!--Features 1 ####################-->
-    <!--###############################-->
-
     <section id="features_1">
         <div class="container">
             <div class="row"  >
@@ -2201,7 +2174,7 @@
                         <svg viewBox="0 0 32 32" class="feature_icon">
                             <use xlink:href="#ribbon"></use></svg>
                         <div>
-                            <h4>Telepresence without video</h4>
+                            <h4>Supports Skype, Google Hangouts and others</h4>
                             <p>Golem's Host Mode runs in the background, so you can use your favorite software for videoconferencing.</p>
                         </div>
                     </div>
@@ -2217,8 +2190,6 @@
             </div>
         </div>
     </section>
-
-    <!--Arrows-->
     <section class="arrows_box">
         <div class="arrows">
             <svg viewBox="0 0 32 32" class="arrow_down" id="features_1_arrow_next">
@@ -2227,12 +2198,6 @@
                 <use xlink:href="#left-arrow"></use></svg>
         </div>
     </section>
-    <!--######-->
-
-    <!--###############################-->
-    <!--Features 2 ####################-->
-    <!--###############################-->
-
     <section id="features_2">
         <div class="container">
             <div class="row">
@@ -2244,7 +2209,7 @@
                             <use xlink:href="#joystick"></use></svg>
                         <div>
                             <h4>Easy to set up</h4>
-                            <p>Just type the PIN code and use smartphone as a joystick. It's that simple!</p>
+                            <p>Just type the PIN code and use your smartphone as a joystick. It's that simple!</p>
                         </div>
                     </div>
                     <div class="feature">
@@ -2273,12 +2238,6 @@
                 <use xlink:href="#left-arrow"></use></svg>
         </div>
     </section>
-    <!--######-->
-
-    <!--###############################-->
-    <!--Gallery #######################-->
-    <!--###############################-->
-
     <section id="gallery">
         <div class="container">
             <div class="row" id="gallery_intro">
@@ -2305,20 +2264,12 @@
             </div>
         </div>
     </section>
-
-    <!--Arrows - single arrow wersion-->
     <section class="arrows_box">
         <div class="arrow_single">
             <svg viewBox="0 0 32 32" class="arrow_up" id="gallery_arrow_back">
                 <use xlink:href="#left-arrow"></use></svg>
         </div>
     </section>
-    <!--######-->
-
-    <!--###############################-->
-    <!--Newsletter and Footer #########-->
-    <!--###############################-->
-
     <section id="footer">
         <div class="container">
             <div class="row" id="newsletter">
@@ -2349,8 +2300,6 @@
            </div>
         </div>
     </section>
-
-    <!-- JavaScript plugins comes here -->
     <script src="js/jquery-2.0.3.min.js"></script>
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/jquery.scrollTo.js"></script>
@@ -2359,40 +2308,6 @@
     <script src="js/waypoints.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/nivo-lightbox.min.js"></script>
-    <script type="text/javascript">
-        $(function(){
-            $('#subscribe-form-btn').click(function(event) {
-                event.preventDefault();
-
-                var $form = $('#subscribe-form');
-
-                $.ajax({
-                    type: $form.attr('method'),
-                    url: $form.attr('action'),
-                    data: $form.serialize(),
-                    cache: false,
-                    dataType: 'jsonp',
-                    contentType: "application/json; charset=utf-8",
-                    error: function(err) {
-                        console.log(err);
-                    },
-                    success: function(data) {
-                        var $btn = $('#subscribe-form-btn');
-
-                        if (data.result == 'success``') {
-                            $btn.html('&#10004;');
-                        } else {
-                            $btn.html('&#65794;')
-                        }
-
-                        setTimeout(function() {
-                            $btn.html('Notify Me');
-                        }, 2000);
-                    }
-                });
-            });
-        });
-    </script>
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -2403,7 +2318,6 @@
         ga('send', 'pageview');
     </script>
     <script>
-        //TODO Async
         var url ='images/icons.svg';
         var c=new XMLHttpRequest(); c.open('GET', url, false); c.setRequestHeader('Content-Type', 'text/xml'); c.send();
         document.body.insertBefore(c.responseXML.firstChild, document.body.firstChild)
