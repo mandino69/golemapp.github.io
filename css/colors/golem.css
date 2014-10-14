@@ -67,3 +67,11 @@ h4 {
 #download, .arrows_box_bg {
     background-color:#f7f8fa;
 }
+
+#tooploox-btn {
+  color: #fff;
+}
+
+#tooploox-btn:hover {
+  color: #eee;
+}
