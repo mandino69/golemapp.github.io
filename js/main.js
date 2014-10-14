@@ -11,8 +11,6 @@
         App.ScrollBack();
         App.Preloader();
         App.Animations();
-        App.Carousel();
-        App.Lightbox();
         App.Newsletter();
     },
 
@@ -35,9 +33,7 @@
     $('#about_arrow_next').click(function () { $.scrollTo('#features_1',1000,{easing:'easeInOutExpo',offset:0,'axis':'y'});});
     $('#features_1_arrow_back').click(function () { $.scrollTo('#about',1000,{easing:'easeInOutExpo',offset:0,'axis':'y'});});
     $('#features_1_arrow_next').click(function () { $.scrollTo('#features_2',1000,{easing:'easeInOutExpo',offset:0,'axis':'y'});});
-    $('#features_3_arrow_back').click(function () { $.scrollTo('#features_2',1000,{easing:'easeInOutExpo',offset:0,'axis':'y'});});
-    $('#features_3_arrow_next').click(function () { $.scrollTo('#gallery',1000,{easing:'easeInOutExpo',offset:0,'axis':'y'});});
-    $('#gallery_arrow_back').click(function () { $.scrollTo('0px',1000,{easing:'easeInOutExpo',offset:0,'axis':'y'});});
+    $('#features_2_arrow_back').click(function () { $.scrollTo('0px',1000,{easing:'easeInOutExpo',offset:0,'axis':'y'});});
     },
 
 
@@ -90,36 +86,6 @@
             setTimeout(function(){$('#features2a_image').addClass('animated fadeInLeft')},1100);
             setTimeout(function(){$('#features2b_image').addClass('animated fadeInLeft')},600)
         }, { offset: '50%' });
-
-        $('#gallery').waypoint(function() {
-            setTimeout(function(){$('#gallery_intro').addClass('animated fadeInDown')},0);
-            setTimeout(function(){$('#gallery_carousel').addClass('animated fadeInUp')},700)
-        }, { offset: '50%' });
-
-    },
-
-
-    /**
-    * Carousel
-    */
-    Carousel: function() {
-        $('#owl-gallery').owlCarousel({
-            items : 5,
-            itemsDesktop : [1199,5],
-            itemsDesktopSmall : [980,5],
-            itemsTablet: [768,5],
-            itemsTabletSmall: [550,2],
-            itemsMobile : [480,2],
-        });
-    },
-
-    /**
-    * Nivo Lightbox
-    */
-    Lightbox: function() {
-        $('#owl-gallery a').nivoLightbox({
-            effect: 'fall',                             // The effect to use when showing the lightbox
-        });
     },
 
     Newsletter: function() {
