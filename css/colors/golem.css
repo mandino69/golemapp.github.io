@@ -14,12 +14,8 @@ body {
     background-color: black;
 }
 
-
-
-
-
-.subscribe-submit, 
-.subscribe-submit:active, 
+.subscribe-submit,
+.subscribe-submit:active,
 .spinner > div,
 .owl-theme .owl-controls .owl-page.active span,
 .owl-theme .owl-controls.clickable .owl-page:hover span,
@@ -27,40 +23,23 @@ body {
     background-color: #f90706;
 }
 
-
-
-
-
-
 #fb_icon:hover,
-#tw_icon:hover, 
-#in_icon:hover, 
-#g_icon:hover, 
-#pin_icon:hover, 
+#tw_icon:hover,
+#in_icon:hover,
+#g_icon:hover,
+#pin_icon:hover,
 #fli_icon:hover,
 .services_icon {
     fill:#f90706;
 }
 
-
-
-
-
-#fb_icon, 
-#tw_icon, 
-#in_icon, 
-#g_icon, 
-#pin_icon, 
+#fb_icon,
+#tw_icon,
+#in_icon,
+#g_icon,
+#pin_icon,
 #fli_icon {
     fill: rgba(255,255,255,0.5);
-}
-
-
-
-
-
-#preview {
-    background-color:#fffcd2;
 }
 
 h3 {
@@ -85,12 +64,6 @@ h4 {
     fill:#dddddd;
 }
 
-#features_3, .arrows_box_bg {
+#download, .arrows_box_bg {
     background-color:#f7f8fa;
 }
-
-.owl-theme .owl-controls .owl-page span{
-	background-color: #d8d8d8;
-}
-
-
