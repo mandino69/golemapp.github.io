@@ -550,6 +550,21 @@ body {
 
 #features_2_content, #features2a_image, #features2b_image {opacity:0;}
 
+/*######################################*/
+/* Download */
+/*######################################*/
+
+#download {
+    padding: 100px 0;
+}
+
+.download-icon {
+    height: 75px;
+}
+
+#appstore-btn:hover, #google-play-btn:hover {
+    cursor: pointer;
+}
 
 /*######################################*/
 /*NEWSLETTER ###########################*/
