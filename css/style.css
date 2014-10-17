@@ -319,12 +319,12 @@ body {
     background-size: cover;
 }
 
-#home_image {
+/*#home_image {
     position:absolute;
     top:13rem;
     right:0;
     z-index:0;
-}
+}*/
 
 #homescreen {
     text-align:left;
