@@ -386,7 +386,7 @@ body {
     opacity:0;
 }
 
-.services_icon {
+.golem_steps_icon {
     width:4rem;
     height:4rem;
     margin-top:6.5rem;
@@ -395,7 +395,7 @@ body {
 
 
 
-#about_intro, #service_1, #service_2, #service_3  {opacity:0;}
+#about_intro, #golem_step_1, #golem_step_2, #golem_step_3  {opacity:0;}
 
 
 /*######################################*/

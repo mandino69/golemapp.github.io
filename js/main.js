@@ -71,9 +71,9 @@
     Animations: function() {
         $('#about').waypoint(function() {
             setTimeout(function(){$('#about_intro').addClass('animated fadeInDown')},0);
-            setTimeout(function(){$('#service_1').addClass('animated fadeInDown')},300);
-            setTimeout(function(){$('#service_2').addClass('animated fadeInDown')},500);
-            setTimeout(function(){$('#service_3').addClass('animated fadeInDown')},700);
+            setTimeout(function(){$('#golem_step_1').addClass('animated fadeInDown')},300);
+            setTimeout(function(){$('#golem_step_2').addClass('animated fadeInDown')},500);
+            setTimeout(function(){$('#golem_step_3').addClass('animated fadeInDown')},700);
         }, { offset: '50%' });
 
         $('#features_1').waypoint(function() {
