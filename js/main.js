@@ -60,7 +60,7 @@
             setTimeout(function(){$('#logo').addClass('animated fadeInDown')},500);
             setTimeout(function(){$('#logo_header').addClass('animated fadeInDown')},600);
             setTimeout(function(){$('#slogan').addClass('animated fadeInDown')},700);
-            setTimeout(function(){$('#home_image').addClass('animated fadeInUp')},900);
+            //setTimeout(function(){$('#home_image').addClass('animated fadeInUp')},900);
         })
     },
 
