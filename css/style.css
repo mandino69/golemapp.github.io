@@ -512,15 +512,15 @@ body {
 
 .image_front {
     position:absolute;
-    left:0;
+    left:280px;
     top:0;
     z-index:30;
 }
 
 .image_back {
     position:relative;
-    left:0;
-    top:0;
+    left:30px;
+    top:90px;
     z-index:29;
 }
 
