@@ -3,7 +3,7 @@
 /*######################################*/
 
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,p,blockquote,hr,th,td {
-	margin:0; 
+	margin:0;
 	padding:0;
 }
 
@@ -511,17 +511,17 @@ body {
 }
 
 .image_front {
-    position:absolute;
-    left:280px;
-    top:0;
-    z-index:30;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 30;
 }
 
 .image_back {
-    position:relative;
-    left:30px;
-    top:90px;
-    z-index:29;
+    position: relative;
+    left: 0;
+    top: 0;
+    z-index: 29;
 }
 
 
