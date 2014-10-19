@@ -7,7 +7,7 @@ body {
 }
 
 #footer {
-    background-color: #1f9bc9;
+    background-color: #e67e22;
 }
 
 .cta1 {
@@ -20,7 +20,7 @@ body {
 .owl-theme .owl-controls .owl-page.active span,
 .owl-theme .owl-controls.clickable .owl-page:hover span,
 .cta2 {
-    background-color: #f90706;
+    background-color: #d35400;
 }
 
 #fb_icon:hover,
