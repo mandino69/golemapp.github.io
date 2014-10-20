@@ -66,6 +66,15 @@ h4 {
     background-color:#f7f8fa;
 }
 
+#support-button {
+	margin-bottom: 3.5rem;
+}
+
+#support-button a {
+	color: #FFF;
+	font-weight: bold;
+}
+
 #tooploox-btn {
   color: #fff;
 }
