@@ -349,11 +349,12 @@ body {
     color:white;
     margin:0px;
     margin-top: 1.5rem;
-    pading:0px;
+    padding: 0px 3px;
     opacity:0;
     position:relative;
     z-index:1;
     width: 60%;
+    background-color: rgba(0, 0, 0, 0.25);
 }
 
 .cta1, .cta2 {
