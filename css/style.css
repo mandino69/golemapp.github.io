@@ -478,7 +478,9 @@ body {
 }
 
 
-
+.features_images {
+    display: inline-block;
+}
 
 
 /*######################################*/
@@ -528,7 +530,9 @@ body {
 }
 
 
-#features_1_content, #features1a_image, #features1b_image {opacity:0;}
+#features_1_content, #features1a_image, #features1b_image {
+    opacity:0;
+}
 
 
 /*######################################*/
@@ -551,7 +555,9 @@ body {
 }
 
 
-#features_2_content, #features2a_image, #features2b_image {opacity:0;}
+#features_2_content, #features2a_image, #features2b_image {
+    opacity:0;
+}
 
 /*######################################*/
 /* Download */
@@ -559,11 +565,18 @@ body {
 
 #download {
     padding: 5.4rem 0;
-    text-align: center;
+}
+
+#download .download-icon-col-1 {
+    text-align: right;
+}
+
+#download .download-icon-col-2 {
+    text-align: left;
 }
 
 .download-icon {
-    height: 4rem;
+    height: 3.5rem;
 }
 
 #appstore-btn:hover, #google-play-btn:hover {

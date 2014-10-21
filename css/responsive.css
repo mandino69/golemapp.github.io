@@ -56,6 +56,11 @@
     #home_image {
         top:17rem;
     }
+
+    #download .download-icon-col-1,
+    #download .download-icon-col-2 {
+        text-align: center;
+    }
 }
 
 @media (max-width: 480px) {
