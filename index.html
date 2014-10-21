@@ -530,9 +530,9 @@
                 <div id="homescreen" class="col-sm-12 col-md-12 col-lg-12">
                      <div id="logo"><a href="#home"><img src="images/logo.png" alt="logo"></a></div>
                      <div id="slogan"><h1>Supercharge your meetings with Golem app and Galileo.</h1></div>
-                     <a href="#" class="cta1" id="button_more">Learn More</a>
-                     <a href="#" class="cta2" id="button_download_ios">Golem for iOS</a>
-                     <a href="#" class="cta2" id="button_download_android">Golem for Android</a>
+                     <a href="#" class="cta1" id="learn-more-btn">Learn More</a>
+                     <a href="#" class="cta2" id="homescreen-appstore-btn">Golem for iOS</a>
+                     <a href="#" class="cta2" id="homescreen-google-play-btn">Golem for Android</a>
                 </div>
                 <div class="clearfix"></div>
             </div>
@@ -654,12 +654,12 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-3 col-sm-offset-3 col-md-3 col-md-offset-3 col-lg-3 col-lg-offset-3 download-icon-col-1">
-                  <svg viewBox="0 0 135 40" class="download-icon" id="appstore-btn" onclick="location.href='#'">
+                  <svg viewBox="0 0 135 40" class="download-icon" id="download-appstore-btn" data-href="#">
                       <use xlink:href="#appstore"></use>
                   </svg>
                 </div>
                 <div class="col-sm-3 col-md-3 col-lg-3 download-icon-col-2">
-                  <svg viewBox="222.251 367.689 169.672 58.874" class="download-icon" id="google-play-btn" onclick="location.href='#'">
+                  <svg viewBox="222.251 367.689 169.672 58.874" class="download-icon" id="download-google-play-btn" data-href="#">
                       <use xlink:href="#google-play"></use>
                   </svg>
                 </div>
@@ -676,7 +676,7 @@
                         <form action="https://tooploox.us9.list-manage.com/subscribe/post-json?u=54a37efc1a15cb5998f123ee0&amp;id=cb29e6fe89&amp;c=?" method="get" class="subscribe-form" id="subscribe-form">
                             <input type="email" name="EMAIL" class="subscribe-input" placeholder="Enter your e-mail address..."  required>
                             <div style="position: absolute; left: -5000px;"><input type="text" name="b_54a37efc1a15cb5998f123ee0_cb29e6fe89" tabindex="-1" value=""></div>
-                            <button type="button" class="subscribe-submit" id="subscribe-form-btn">Notify Me</button>
+                            <button type="button" class="subscribe-submit" id="subscribe-btn">Notify Me</button>
                         </form>
                     </div>
                     <div id="preview"></div>
@@ -684,12 +684,12 @@
             </div>
            <div class="row">
                <div class="col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1" id="share">
-               <p id="support-button">Do you need any help?<br /><a href="mailto:support@tooploox.com">support@tooploox.com</a></p>
+               <p id="support-button">Do you need any help?<br /><a id="support-btn" href="mailto:support@tooploox.com">support@tooploox.com</a></p>
                    <div id="social_icons">
                        <ul>
-                           <li><svg viewBox="0 0 32 32" id="fb_icon" onclick="location.href='https://www.facebook.com/golemapp'"><use xlink:href="#facebook"></use></svg></li>
-                           <li><svg viewBox="0 0 32 32" id="tw_icon" onclick="location.href='https://twitter.com/discovergolem'"><use xlink:href="#twitter"></use></svg></li>
-                           <li><svg viewBox="0 0 32 32" id="g_icon" onclick="location.href='https://plus.google.com/106360352068960791442'"><use xlink:href="#google-plus"></use></svg></li>
+                           <li><svg viewBox="0 0 32 32" id="fb_icon" data-href="https://www.facebook.com/golemapp"><use xlink:href="#facebook"></use></svg></li>
+                           <li><svg viewBox="0 0 32 32" id="tw_icon" data-href="https://twitter.com/discovergolem"><use xlink:href="#twitter"></use></svg></li>
+                           <li><svg viewBox="0 0 32 32" id="g_icon" data-href="https://plus.google.com/106360352068960791442"><use xlink:href="#google-plus"></use></svg></li>
                        </ul>
                    </div>
                    <p>Copyright &copy; 2014 <a id="tooploox-btn" href="http://tooploox.com">Tooploox</a></p>

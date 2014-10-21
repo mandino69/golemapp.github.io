@@ -6,14 +6,47 @@
     * Init Function
     */
     init: function() {
+        App.Home();
         App.HomeOpacity();
         App.ScrollToContact();
         App.ScrollBack();
         App.Preloader();
         App.Animations();
+        App.Downloads();
         App.Newsletter();
+        App.Social();
+        App.Footer();
     },
 
+    Home: function() {
+        $('#learn-more-btn').on('click', function(event) {
+            ga('send', 'event', 'learn-more-btn', 'click');
+        });
+
+        var $appStoreBtn = $('#homescreen-appstore-btn');
+
+        $appStoreBtn.on('click', function(event) {
+            event.preventDefault();
+
+            ga('send', 'event', 'homescreen-appstore-btn', 'click', 'download-ios', {
+                'hitCallback': function() {
+                    location.href = $appStoreBtn.attr('href')
+                }
+            });
+        });
+
+        var $googlePlayBtn = $('#homescreen-google-play-btn');
+
+        $googlePlayBtn.on('click', function(event) {
+            event.preventDefault();
+
+            ga('send', 'event', 'homescreen-google-play-btn', 'click', 'download-android', {
+                'hitCallback': function() {
+                    location.href = $googlePlayBtn.attr('href')
+                }
+            });
+        });
+    },
 
     HomeOpacity: function() {
         var h = window.innerHeight;
@@ -28,13 +61,13 @@
     * Scroll To Contact
     */
     ScrollToContact: function() {
-    $('#button_more').click(function () { $.scrollTo('#about',1000,{easing:'easeInOutExpo',offset:0,'axis':'y'});});
-    $('#about_arrow_back').click(function () { $.scrollTo('0px',1000,{easing:'easeInOutExpo',offset:0,'axis':'y'});});
-    $('#about_arrow_next').click(function () { $.scrollTo('#features_1',1000,{easing:'easeInOutExpo',offset:0,'axis':'y'});});
-    $('#features_1_arrow_back').click(function () { $.scrollTo('#about',1000,{easing:'easeInOutExpo',offset:0,'axis':'y'});});
-    $('#features_1_arrow_next').click(function () { $.scrollTo('#features_2',1000,{easing:'easeInOutExpo',offset:0,'axis':'y'});});
-    $('#features_2_arrow_back').click(function () { $.scrollTo('0px',1000,{easing:'easeInOutExpo',offset:0,'axis':'y'});});
-    $('#features_2_arrow_next').click(function () { $.scrollTo('#download',1000,{easing:'easeInOutExpo',offset:0,'axis':'y'});});
+        $('#learn-more-btn').click(function () { $.scrollTo('#about',1000,{easing:'easeInOutExpo',offset:0,'axis':'y'});});
+        $('#about_arrow_back').click(function () { $.scrollTo('0px',1000,{easing:'easeInOutExpo',offset:0,'axis':'y'});});
+        $('#about_arrow_next').click(function () { $.scrollTo('#features_1',1000,{easing:'easeInOutExpo',offset:0,'axis':'y'});});
+        $('#features_1_arrow_back').click(function () { $.scrollTo('#about',1000,{easing:'easeInOutExpo',offset:0,'axis':'y'});});
+        $('#features_1_arrow_next').click(function () { $.scrollTo('#features_2',1000,{easing:'easeInOutExpo',offset:0,'axis':'y'});});
+        $('#features_2_arrow_back').click(function () { $.scrollTo('0px',1000,{easing:'easeInOutExpo',offset:0,'axis':'y'});});
+        $('#features_2_arrow_next').click(function () { $.scrollTo('#download',1000,{easing:'easeInOutExpo',offset:0,'axis':'y'});});
     },
 
 
@@ -89,37 +122,141 @@
         }, { offset: '50%' });
     },
 
-    Newsletter: function() {
-        $('#subscribe-form-btn').click(function(event) {
+    Download: function() {
+        var $appStoreBtn = $('#download-appstore-btn');
+
+        $appStoreBtn.on('click', function(event) {
             event.preventDefault();
 
-            var $form = $('#subscribe-form');
-
-            $.ajax({
-                type: $form.attr('method'),
-                url: $form.attr('action'),
-                data: $form.serialize(),
-                cache: false,
-                dataType: 'jsonp',
-                contentType: "application/json; charset=utf-8",
-                error: function(err) {
-                    console.log(err);
-                },
-                success: function(data) {
-                    var $btn = $('#subscribe-form-btn');
-
-                    if (data.result == 'success') {
-                        $btn.html('&#10004;');
-                    } else {
-                        $btn.html('&#65794;')
-                    }
-
-                    setTimeout(function() {
-                        $btn.html('Notify Me');
-                    }, 2000);
+            ga('send', 'event', 'download-appstore-btn', 'click', 'download-ios', {
+                'hitCallback': function() {
+                    location.href = $appStoreBtn.data('href');
                 }
             });
         });
+
+        var $googlePlayBtn = $('#download-google-play-btn');
+
+        $googlePlayBtn.on('click', function(event) {
+            event.preventDefault();
+
+            ga('send', 'event', 'download-google-play-btn', 'click', 'download-android', {
+                'hitCallback': function() {
+                    location.href = $googlePlayBtn.data('href');
+                }
+            });
+        });
+    },
+
+    Newsletter: function() {
+        var $subscribeBtn = $('#subscribe-btn');
+
+        $subscribeBtn.click(function(event) {
+            event.preventDefault();
+
+            ga('send', 'event', 'newsletter-subscribe-btn', 'click', {
+                'hitCallback': function() {
+                    var $form = $('#subscribe-form');
+
+                    $.ajax({
+                        type: $form.attr('method'),
+                        url: $form.attr('action'),
+                        data: $form.serialize(),
+                        cache: false,
+                        dataType: 'jsonp',
+                        contentType: "application/json; charset=utf-8",
+                        error: function(err) {
+                            ga('send', 'event', 'newsletter-subscribe-btn', 'failure');
+
+                            $subscribeBtn.html('&#65794;')
+
+                            setTimeout(function() {
+                                $subscribeBtn.html('Notify Me');
+                            }, 2000);
+                        },
+                        success: function(data) {
+                            if (data.result == 'success') {
+                                ga('send', 'event', 'newsletter-subscribe-btn', 'success');
+
+                                $subscribeBtn.html('&#10004;');
+                            } else {
+                                ga('send', 'event', 'newsletter-subscribe-btn', 'failure');
+
+                                $subscribeBtn.html('&#65794;')
+                            }
+
+                            setTimeout(function() {
+                                $subscribeBtn.html('Notify Me');
+                            }, 2000);
+                        }
+                    });
+                }
+            });
+        });
+    },
+
+    Support: function() {
+        var $supportBtn = $('#support-btn');
+
+        $supportBtn.on('click', function(event) {
+            ga('send', 'event', 'support-btn', 'click', 'support');
+        });
+    },
+
+    Social: function() {
+        // Facebook
+        var $fbBtn = $('#fb_icon');
+
+        $fbBtn.on('click', function(event) {
+            event.preventDefault();
+
+            ga('send', 'event', 'facebook-btn', 'click', 'facebook-link', {
+                'hitCallback': function() {
+                    location.href = $fbBtn.data('href');
+                }
+            });
+        });
+
+        // Twitter
+        var $twBtn = $('#tw_icon');
+
+        $twBtn.on('click', function(event) {
+            event.preventDefault();
+
+            ga('send', 'event', 'twitter-btn', 'click', 'twitter-link', {
+                'hitCallback': function() {
+                    location.href = $twBtn.data('href');
+                }
+            });
+        });
+
+        // Google Play
+        var $gpBtn = $('#g_icon');
+
+        $gpBtn.on('click', function(event) {
+            event.preventDefault();
+
+            ga('send', 'event', 'google-plus-btn', 'click', 'google-plus-link', {
+                'hitCallback': function() {
+                    location.href = $gpBtn.data('href');
+                }
+            });
+        });
+    },
+
+    Footer: function() {
+        var $tooplooxBtn = $('#tooploox-btn');
+
+        $tooplooxBtn.on('click', function(event) {
+            event.preventDefault();
+
+            ga('send', 'event', 'tooploox-btn', 'click', 'tooploox-link', {
+                'hitCallback': function() {
+                    location.href = $tooplooxBtn.attr('href');
+                }
+            });
+        });
+
     },
  }
 

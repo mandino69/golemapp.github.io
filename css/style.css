@@ -579,7 +579,7 @@ body {
     height: 3.5rem;
 }
 
-#appstore-btn:hover, #google-play-btn:hover {
+#download-appstore-btn:hover, #download-google-play-btn:hover {
     cursor: pointer;
 }
 
