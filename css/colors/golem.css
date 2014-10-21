@@ -80,16 +80,13 @@ h4 {
 
 #get-galileo .highlight {
     color: #fff;
+    font-weight: bold;
 }
 
 #motrr-store-btn {
     color: #fff;
     border-bottom-color: #fff;
     font-size: 2rem;
-}
-
-#get-galileo-arrows-box {
-    background: #73201f;
 }
 
 #support-button {
