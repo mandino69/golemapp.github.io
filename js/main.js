@@ -68,6 +68,8 @@
         $('#features_1_arrow_next').click(function () { $.scrollTo('#features_2',1000,{easing:'easeInOutExpo',offset:0,'axis':'y'});});
         $('#features_2_arrow_back').click(function () { $.scrollTo('0px',1000,{easing:'easeInOutExpo',offset:0,'axis':'y'});});
         $('#features_2_arrow_next').click(function () { $.scrollTo('#download',1000,{easing:'easeInOutExpo',offset:0,'axis':'y'});});
+        $('#get_galileo_arrow_back').click(function () { $.scrollTo('0px',1000,{easing:'easeInOutExpo',offset:0,'axis':'y'});});
+        $('#get_galileo_arrow_next').click(function () { $.scrollTo('#footer',1000,{easing:'easeInOutExpo',offset:0,'axis':'y'});});
     },
 
 

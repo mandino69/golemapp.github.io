@@ -584,6 +584,27 @@ body {
 }
 
 /*######################################*/
+/* Get Galileo*/
+/*######################################*/
+
+#get-galileo {
+    padding: 5.4rem 0;
+    text-align: center;
+}
+
+#get-galileo p {
+    margin: 2rem 0;
+}
+
+#motrr-store-btn {
+    border-bottom: 2px solid;
+}
+
+#get-galileo-arrows-box {
+    border: 0;
+}
+
+/*######################################*/
 /*NEWSLETTER ###########################*/
 /*######################################*/
 

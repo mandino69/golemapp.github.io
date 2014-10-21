@@ -66,6 +66,32 @@ h4 {
     background-color:#f7f8fa;
 }
 
+#get-galileo {
+    background: #73201f;
+}
+
+#get-galileo h3 {
+    color: #fff;
+}
+
+#get-galileo p {
+    color: #ce9d9e;
+}
+
+#get-galileo .highlight {
+    color: #fff;
+}
+
+#motrr-store-btn {
+    color: #fff;
+    border-bottom-color: #fff;
+    font-size: 2rem;
+}
+
+#get-galileo-arrows-box {
+    background: #73201f;
+}
+
 #support-button {
 	margin-bottom: 3.5rem;
 }
