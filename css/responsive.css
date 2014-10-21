@@ -49,28 +49,6 @@
         font-size: 1.5rem;
     }
 
-    #features_3 {
-        height:auto;
-    }
-
-    #features_3_content_left {
-        text-align:center;
-        padding-bottom:6.5rem;
-        padding-right:1rem;
-    }
-
-    #features_3_content_right {
-        text-align:center;
-        padding-left:1rem;
-
-    }
-
-    #features_3_content_center img{
-        text-align:center;
-        margin-left:auto;
-        margin-right:auto;
-    }
-
     #logo {
         margin-top: 2rem;
     }
@@ -78,7 +56,6 @@
     #home_image {
         top:17rem;
     }
-
 }
 
 @media (max-width: 480px) {
@@ -108,5 +85,9 @@
 
     #slogan {
         width:90%;
+    }
+
+    .cta1, .cta2 {
+        margin-top: 2rem;
     }
 }
