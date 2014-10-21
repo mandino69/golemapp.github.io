@@ -12,7 +12,7 @@
         App.ScrollBack();
         App.Preloader();
         App.Animations();
-        App.Downloads();
+        App.Download();
         App.Newsletter();
         App.Social();
         App.Footer();
