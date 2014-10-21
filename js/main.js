@@ -13,6 +13,7 @@
         App.Preloader();
         App.Animations();
         App.Download();
+        App.GetGalileo();
         App.Newsletter();
         App.Social();
         App.Footer();
@@ -68,8 +69,6 @@
         $('#features_1_arrow_next').click(function () { $.scrollTo('#features_2',1000,{easing:'easeInOutExpo',offset:0,'axis':'y'});});
         $('#features_2_arrow_back').click(function () { $.scrollTo('0px',1000,{easing:'easeInOutExpo',offset:0,'axis':'y'});});
         $('#features_2_arrow_next').click(function () { $.scrollTo('#download',1000,{easing:'easeInOutExpo',offset:0,'axis':'y'});});
-        $('#get_galileo_arrow_back').click(function () { $.scrollTo('0px',1000,{easing:'easeInOutExpo',offset:0,'axis':'y'});});
-        $('#get_galileo_arrow_next').click(function () { $.scrollTo('#footer',1000,{easing:'easeInOutExpo',offset:0,'axis':'y'});});
     },
 
 
@@ -145,6 +144,20 @@
             ga('send', 'event', 'download-google-play-btn', 'click', 'download-android', {
                 'hitCallback': function() {
                     location.href = $googlePlayBtn.data('href');
+                }
+            });
+        });
+    },
+
+    GetGalileo: function() {
+        var $motrrStoreBtn = $('#motrr-store-btn');
+
+        $motrrStoreBtn.on('click', function(event) {
+            event.preventDefault();
+
+            ga('send', 'event', 'motrr-store-btn', 'click', 'motrr-store', {
+                'hitCallback': function() {
+                    location.href = $motrrStoreBtn.attr('href');
                 }
             });
         });
