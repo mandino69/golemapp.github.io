@@ -47,6 +47,18 @@
                 }
             });
         });
+
+        var $golemWebBtn = $('#homescreen-golem-web-btn');
+
+        $golemWebBtn.on('click', function(event) {
+            event.preventDefault()
+
+            ga('send', 'event', 'homescreen-golem-web-btn', 'click', 'launch-webapp', {
+                hitCallback: function() {
+                    location.href = $golemWebBtn.attr('href');
+                }
+            });
+        });
     },
 
     HomeOpacity: function() {
