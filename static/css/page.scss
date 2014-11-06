@@ -1,0 +1,43 @@
+---
+---
+@import 'colors';
+@import 'base';
+
+$site-header-height: 50px;
+$site-footer-height: 50px;
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+#site-header {
+    height: $site-header-height;
+    line-height: $site-header-height;
+    background: $color-orange-pumpkin;
+
+    a {
+        color: $color-white;
+    }
+}
+
+#site-content {
+    flex: 1;
+    margin: 50px 0;
+
+    h2, h3, h4, h5 {
+        margin: 1rem 0;
+    }
+
+    p {
+        margin: 1rem 0;
+    }
+}
+
+#site-footer {
+    color: $color-gray;
+    height: $site-footer-height;
+    line-height: $site-footer-height;
+    text-align: center;
+}
