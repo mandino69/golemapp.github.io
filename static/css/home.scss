@@ -748,15 +748,15 @@ body {
 
 /* Colors */
 body {
-    background-color: white;
+    background-color: $color-white;
 }
 
 #footer {
-    background-color: #e67e22;
+    background-color: $color-orange-pumpkin;
 }
 
 .cta1 {
-    background-color: black;
+    background-color: $color-black;
 }
 
 .subscribe-submit,
