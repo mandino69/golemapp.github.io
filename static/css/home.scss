@@ -1,113 +1,7 @@
-/*######################################*/
-/*RESET ################################*/
-/*######################################*/
-
-body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,p,blockquote,hr,th,td {
-	margin:0;
-	padding:0;
-}
-
-
-
-
-
-/*######################################*/
-/*TYPOGRAPHY ###########################*/
-/*######################################*/
-
-@font-face{ 
-	font-family: 'Lane';
-	src: url('fonts/LANENAR_-webfont.eot');
-	src: url('fonts/LANENAR_-webfont.eot?iefix') format('eot'),
-	     url('fonts/LANENAR_-webfont.woff') format('woff'),
-	     url('fonts/LANENAR_-webfont.ttf') format('truetype'),
-	     url('fonts/LANENAR_-webfont.svg#webfont') format('svg');
-}
-
-html {
-	-webkit-font-smoothing: antialiased;
-}
-
-html {
-	font-size: 100%;
-}
-
-p {
-    font-size: 1rem;
-	line-height: 1.625em;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 300;
-}
-
-a {
-    font-size: 1em;
-	line-height: 1.625rem;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 600;
-    text-decoration:none;
-}
-
-a:hover {
-    text-decoration:none;
-}
-
-h1,h2,h3 {
-    font-family: 'Lane', sans-serif;
-    font-weight: normal;
-}
-
-h1 {
-    font-size:3rem;
-    line-height:3.5rem;
-}
-
-h2 {
-    font-size:2.5rem;
-    line-height:3.6rem;
-    margin-bottom:1.7rem;
-}
-
-h3 {
-    font-size:1.7rem;
-    line-height:2.25rem;
-}
-
-h4 {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size:1rem;
-    line-height: 1.625rem;
-    font-weight:600;
-}
-
-h5 {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size:0.8125rem;
-    line-height: 1rem;
-    font-weight:300;
-    color:white;
-    text-transform:uppercase;
-}
-
-ul {
-    list-style:none
-}
-
-li {
-    margin-top:1.625em;
-}
-
-li a {
-    display:inline;
-}
-
-hr {
-    margin-top:4.568em;
-    margin-bottom:4.568em;
-}
-
-
-
-
+---
+---
+@import 'colors';
+@import 'base';
 
 /*######################################*/
 /*BUTTONS ############################*/
@@ -115,33 +9,33 @@ hr {
 
 .cta1 {
     display:inline-block;
-	color:white;
-	font-family: 'Source Sans Pro', sans-serif;
-	font-size:1rem;
-	font-weight:700;
-	font-style:normal;
-	padding-top:1rem;
+    color:white;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size:1rem;
+    font-weight:700;
+    font-style:normal;
+    padding-top:1rem;
     padding-bottom:1.1rem;
-	width:9.375rem;
+    width:9.375rem;
     line-height:1rem;
-	text-decoration:none;
-	text-align:center;
+    text-decoration:none;
+    text-align:center;
     margin-left:0.625rem;
     margin-right:0.625rem;
     margin-top:1.4rem;
     letter-spacing:-0.03rem;
     -webkit-border-top-left-radius:7px;
-	-moz-border-radius-topleft:7px;
-	border-top-left-radius:7px;
-	-webkit-border-top-right-radius:7px;
-	-moz-border-radius-topright:7px;
-	border-top-right-radius:7px;
-	-webkit-border-bottom-right-radius:7px;
-	-moz-border-radius-bottomright:7px;
-	border-bottom-right-radius:7px;
-	-webkit-border-bottom-left-radius:7px;
-	-moz-border-radius-bottomleft:7px;
-	border-bottom-left-radius:7px;
+    -moz-border-radius-topleft:7px;
+    border-top-left-radius:7px;
+    -webkit-border-top-right-radius:7px;
+    -moz-border-radius-topright:7px;
+    border-top-right-radius:7px;
+    -webkit-border-bottom-right-radius:7px;
+    -moz-border-radius-bottomright:7px;
+    border-bottom-right-radius:7px;
+    -webkit-border-bottom-left-radius:7px;
+    -moz-border-radius-bottomleft:7px;
+    border-bottom-left-radius:7px;
 }
 
 .cta1:visited, .cta1:active {
@@ -164,33 +58,33 @@ hr {
 
 .cta2 {
     display:inline-block;
-	color:white;
-	font-family: 'Source Sans Pro', sans-serif;
-	font-size:1rem;
-	font-weight:700;
-	font-style:normal;
-	padding-top:1rem;
+    color:white;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size:1rem;
+    font-weight:700;
+    font-style:normal;
+    padding-top:1rem;
     padding-bottom:1.1rem;
-	width:9.375rem;
+    width:9.375rem;
     line-height:1rem;
-	text-decoration:none;
-	text-align:center;
+    text-decoration:none;
+    text-align:center;
     margin-left:0.625rem;
     margin-right:0.625rem;
     margin-top:1.4rem;
     letter-spacing:-0.03rem;
     -webkit-border-top-left-radius:7px;
-	-moz-border-radius-topleft:7px;
-	border-top-left-radius:7px;
-	-webkit-border-top-right-radius:7px;
-	-moz-border-radius-topright:7px;
-	border-top-right-radius:7px;
-	-webkit-border-bottom-right-radius:7px;
-	-moz-border-radius-bottomright:7px;
-	border-bottom-right-radius:7px;
-	-webkit-border-bottom-left-radius:7px;
-	-moz-border-radius-bottomleft:7px;
-	border-bottom-left-radius:7px;
+    -moz-border-radius-topleft:7px;
+    border-top-left-radius:7px;
+    -webkit-border-top-right-radius:7px;
+    -moz-border-radius-topright:7px;
+    border-top-right-radius:7px;
+    -webkit-border-bottom-right-radius:7px;
+    -moz-border-radius-bottomright:7px;
+    border-bottom-right-radius:7px;
+    -webkit-border-bottom-left-radius:7px;
+    -moz-border-radius-bottomleft:7px;
+    border-bottom-left-radius:7px;
     opacity:1;
 }
 
@@ -221,26 +115,26 @@ hr {
 /*######################################*/
 
 #preloader {
-	position: fixed;
-	top:0;
-	left:0;
-	right:0;
-	bottom:0;
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
     width:100%;
     height:100%;
-	background-color:#fff; 
+    background-color:#fff; 
     z-index:9999; /* makes sure it stays on top */
 }
 
 #status {
-	width:200px;
-	height:200px;
-	position:absolute;
-	left:50%; /* centers the loading animation horizontally one the screen */
-	top:50%; /* centers the loading animation vertically one the screen */
-	background-repeat:no-repeat;
-	background-position:center;
-	margin:-100px 0 0 -100px; /* is width and height divided by two */
+    width:200px;
+    height:200px;
+    position:absolute;
+    left:50%; /* centers the loading animation horizontally one the screen */
+    top:50%; /* centers the loading animation vertically one the screen */
+    background-repeat:no-repeat;
+    background-position:center;
+    margin:-100px 0 0 -100px; /* is width and height divided by two */
 }
 
 /* Loading animation: */
@@ -751,4 +645,208 @@ body {
     cursor: pointer;
 }
 
+/* Responsive */
 
+@media (min-width: 1200px) {
+    html {
+        font-size: 118.75%;
+    }
+
+    #home_image {
+        top: 17rem;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    html {
+        font-size: 81.25%;
+    }
+
+    #logo {
+        margin-top: 6rem;
+    }
+
+}
+
+@media (max-width: 767px) {
+    html {
+        font-size: 81.25%;
+    }
+
+    #features_1, #features_2 {
+        text-align:center;
+    }
+
+    .feature_icon {
+        float:none;
+        width:3rem;
+        height:3rem;
+        margin-bottom: 1rem;
+        margin-right:0;
+    }
+
+    #about {
+        margin-bottom:4.568em;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+
+    h4 {
+        font-size: 1.5rem;
+    }
+
+    #logo {
+        margin-top: 2rem;
+    }
+
+    #home_image {
+        top:17rem;
+    }
+
+    #download .download-icon-col-1,
+    #download .download-icon-col-2 {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    html {
+        font-size: 62.5%;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    #logo_header {
+        margin-bottom:2em
+    }
+
+    #logo {
+        margin-top: 2rem;
+    }
+
+    #home_image {
+        top:25rem;
+    }
+
+    #slogan {
+        width:90%;
+    }
+
+    .cta1, .cta2 {
+        margin-top: 2rem;
+    }
+}
+
+/* Colors */
+body {
+    background-color: white;
+}
+
+#footer {
+    background-color: #e67e22;
+}
+
+.cta1 {
+    background-color: black;
+}
+
+.subscribe-submit,
+.subscribe-submit:active,
+.spinner > div,
+.cta2 {
+    background-color: #d35400;
+}
+
+#fb_icon:hover,
+#tw_icon:hover,
+#in_icon:hover,
+#g_icon:hover,
+#pin_icon:hover,
+#fli_icon:hover,
+.services_icon {
+    fill:#fff;
+}
+
+#fb_icon,
+#tw_icon,
+#in_icon,
+#g_icon,
+#pin_icon,
+#fli_icon {
+    fill: rgba(255,255,255,0.5);
+}
+
+h3 {
+    color:black;
+}
+
+h4 {
+    color:#f90706;
+}
+
+.feature_icon {
+    fill:#d8d8d8;
+}
+
+.arrow_up,
+.arrow_down {
+    fill:#f0f0f0;
+}
+
+.arrow_down:hover,
+.arrow_up:hover {
+    fill:#dddddd;
+}
+
+#download, .arrows_box_bg {
+    background-color:#f7f8fa;
+}
+
+#get-galileo {
+    background: #73201f;
+}
+
+#get-galileo h3 {
+    color: #fff;
+}
+
+#get-galileo p {
+    color: #ce9d9e;
+}
+
+#get-galileo .highlight {
+    color: #fff;
+    font-weight: bold;
+}
+
+#motrr-store-btn {
+    color: #fff;
+    border-bottom-color: #fff;
+    font-size: 2rem;
+}
+
+#support-button {
+    margin-bottom: 3.5rem;
+}
+
+#support-button a {
+    color: #FFF;
+    font-weight: bold;
+}
+
+#tooploox-btn {
+  color: #fff;
+}
+
+#tooploox-btn:hover {
+  color: #eee;
+}

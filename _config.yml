@@ -1,0 +1,19 @@
+# Site settings
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://golemapp.com" # the base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown
+
+# Defaults
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      title: Golem — Videoconferencing made fun
+      email: hello@tooploox.com
+      description: Telepresence app for Motrr's Galileo.
+      keywords: telepresence,teleconference,videoconference,remote,galileo,tooploox,golem,hangout,skype
+      author: Tooploox
+

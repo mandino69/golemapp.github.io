@@ -1,0 +1,98 @@
+/* Reset */
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,p,blockquote,hr,th,td {
+    margin:0;
+    padding:0;
+}
+
+/* Typography */
+
+@font-face{
+    font-family: 'Lane';
+    src: url('fonts/LANENAR_-webfont.eot');
+    src: url('fonts/LANENAR_-webfont.eot?iefix') format('eot'),
+         url('fonts/LANENAR_-webfont.woff') format('woff'),
+         url('fonts/LANENAR_-webfont.ttf') format('truetype'),
+         url('fonts/LANENAR_-webfont.svg#webfont') format('svg');
+}
+
+html {
+    -webkit-font-smoothing: antialiased;
+}
+
+html {
+    font-size: 100%;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.625em;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+}
+
+a {
+    font-size: 1em;
+    line-height: 1.625rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    text-decoration:none;
+}
+
+a:hover {
+    text-decoration:none;
+}
+
+h1,h2,h3 {
+    font-family: 'Lane', sans-serif;
+    font-weight: normal;
+}
+
+h1 {
+    font-size:3rem;
+    line-height:3.5rem;
+}
+
+h2 {
+    font-size:2.5rem;
+    line-height:3.6rem;
+    margin-bottom:1.7rem;
+}
+
+h3 {
+    font-size:1.7rem;
+    line-height:2.25rem;
+}
+
+h4 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size:1rem;
+    line-height: 1.625rem;
+    font-weight:600;
+}
+
+h5 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size:0.8125rem;
+    line-height: 1rem;
+    font-weight:300;
+    color:white;
+    text-transform:uppercase;
+}
+
+ul {
+    list-style:none
+}
+
+li {
+    margin-top:1.625em;
+}
+
+li a {
+    display:inline;
+}
+
+hr {
+    margin-top:4.568em;
+    margin-bottom:4.568em;
+}
