@@ -13,12 +13,11 @@ body {
 }
 
 #site-header {
-    height: $site-header-height;
-    line-height: $site-header-height;
     background: $color-orange-pumpkin;
 
     a {
         color: $color-white;
+        line-height: $site-header-height;
     }
 }
 
@@ -36,7 +35,6 @@ body {
 
     li {
         margin-left: 1rem;
-        
     }
 }
 

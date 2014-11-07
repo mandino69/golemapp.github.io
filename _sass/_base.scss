@@ -24,6 +24,21 @@ html {
     font-size: 100%;
 }
 
+ul.nav-right {
+    text-align: right;
+}
+
+ul.nav {
+    list-style: none;
+
+    li {
+        a {
+            display: inline-block;
+        }
+    }
+}
+
+
 p, li {
     font-size: 1rem;
     line-height: 1.625em;
