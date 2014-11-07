@@ -3,6 +3,18 @@
 @import 'colors';
 @import 'base';
 
+ul {
+    list-style:none
+}
+
+li {
+    margin-top:1.625em;
+}
+
+li a {
+    display:inline;
+}
+
 /*######################################*/
 /*BUTTONS ############################*/
 /*######################################*/

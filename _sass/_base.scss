@@ -24,7 +24,7 @@ html {
     font-size: 100%;
 }
 
-p {
+p, li {
     font-size: 1rem;
     line-height: 1.625em;
     font-family: 'Source Sans Pro', sans-serif;
@@ -78,18 +78,6 @@ h5 {
     font-weight:300;
     color:white;
     text-transform:uppercase;
-}
-
-ul {
-    list-style:none
-}
-
-li {
-    margin-top:1.625em;
-}
-
-li a {
-    display:inline;
 }
 
 hr {
