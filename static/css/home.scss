@@ -657,6 +657,12 @@ body {
     cursor: pointer;
 }
 
+
+#nav-footer-misc {
+    text-align:center;
+    margin-bottom:3.6rem;
+}
+
 /* Responsive */
 
 @media (min-width: 1200px) {
@@ -855,7 +861,7 @@ h4 {
     font-weight: bold;
 }
 
-#tooploox-btn {
+#nav-footer-misc a, #tooploox-btn {
   color: #fff;
 }
 
