@@ -247,6 +247,11 @@ body {
     opacity:1;
 }
 
+#logo-image {
+    width: 180px;
+    height: 180px;
+}
+
 #logo_header {
     margin-bottom:0.5rem
 }
@@ -680,16 +685,15 @@ body {
     html {
         font-size: 81.25%;
     }
-
-    #logo {
-        margin-top: 6rem;
-    }
-
 }
 
 @media (max-width: 767px) {
     html {
         font-size: 81.25%;
+    }
+
+    #home {
+        background-position: 75% 50%;
     }
 
     #features_1, #features_2 {
@@ -716,8 +720,9 @@ body {
         font-size: 1.5rem;
     }
 
-    #logo {
-        margin-top: 2rem;
+    #logo-image {
+        width: 90px;
+        height: 90px;
     }
 
     #home_image {
@@ -745,10 +750,6 @@ body {
 
     #logo_header {
         margin-bottom:2em
-    }
-
-    #logo {
-        margin-top: 2rem;
     }
 
     #home_image {
