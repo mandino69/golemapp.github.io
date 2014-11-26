@@ -12,6 +12,7 @@
         App.ScrollBack();
         App.Preloader();
         App.Animations();
+        App.GoogleHangout();
         App.Download();
         App.GetGalileo();
         App.Newsletter();
@@ -80,7 +81,7 @@
         $('#features_1_arrow_back').click(function () { $.scrollTo('#about',1000,{easing:'easeInOutExpo',offset:0,'axis':'y'});});
         $('#features_1_arrow_next').click(function () { $.scrollTo('#features_2',1000,{easing:'easeInOutExpo',offset:0,'axis':'y'});});
         $('#features_2_arrow_back').click(function () { $.scrollTo('0px',1000,{easing:'easeInOutExpo',offset:0,'axis':'y'});});
-        $('#features_2_arrow_next').click(function () { $.scrollTo('#download',1000,{easing:'easeInOutExpo',offset:0,'axis':'y'});});
+        $('#features_2_arrow_next').click(function () { $.scrollTo('#google-hangout',1000,{easing:'easeInOutExpo',offset:0,'axis':'y'});});
     },
 
 
@@ -133,6 +134,13 @@
             setTimeout(function(){$('#features2a_image').addClass('animated fadeInLeft')},1100);
             setTimeout(function(){$('#features2b_image').addClass('animated fadeInLeft')},600)
         }, { offset: '50%' });
+    },
+
+    GoogleHangout: function() {
+        gapi.hangout.render('google-hangout-btn', {
+            'render': 'createhangout',
+            'initial_apps': [{'app_id' : '713831563864', 'app_type' : 'ROOM_APP'}]
+        });
     },
 
     Download: function() {
